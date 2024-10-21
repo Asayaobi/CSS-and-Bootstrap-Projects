@@ -12,8 +12,12 @@ body {
 
 h1 {
   font-size: 5rem;
+  width: 1000px;
 }
 
+span {
+  color: #191970;
+}
 footer {
   text-align: right;
   color: midnightblue;
