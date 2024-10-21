@@ -10,39 +10,37 @@
 <head>
   <title>CSS Display Property Example</title>
   <style>
-    p {
-      color: white;
+    h1{
+      background-color: aquamarine;
     }
-
-    .red {
-      /* display: inline-block; */
-      width: 200px;
-      height: 200px;
-      background-color: red;
+    img {
+      float: left;
+      height: 40%;
+      width: 40%;
+      padding-right: 10px;
     }
-
-    .green {
-      /* display: inline-block; */
-      width: 200px;
-      height: 200px;
-      background-color: green;
+    span {
+      font-weight: bold;
+      font-size: 2rem;
     }
-
-    .blue {
-      /* display: inline-block; */
-      width: 200px;
-      height: 200px;
-      background-color: blue;
+    footer {
+      background-color: aqua;
+      margin-top: 10px;
+      clear: both;
     }
   </style>
 </head>
 
 
 <body>
-  <h1>CSS Display Property</h1>
-  <p class="red">Red Paragraph </p>
-  <p class="green">Green Paragraph</p>
-  <p class="blue">Blue Paragraph</p>
+  <h1>Header</h1>
+  <img src="../6.4 Motivation Meme Project/assets/images/moodeng.jpg">
+  <p> <span>Moo Deng</span> (born 10 July 2024) is a pygmy hippopotamus living in Khao Kheow Open Zoo in Si Racha, Chonburi, Thailand.She became a popular Internet meme at two months of age after images of her went viral online in September 2024.</p>
+  <footer> </footer>
+  <script>
+    document.querySelector('footer').innerHTML = 
+    `© Moo Deng Copyright ${new Date().getFullYear()}`
+  </script>
 </body>
 
 </html>
