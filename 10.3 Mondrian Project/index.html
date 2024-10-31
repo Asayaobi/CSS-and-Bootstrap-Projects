@@ -26,7 +26,7 @@
       display: grid;
       grid-template-columns: 320px 198px 153px 50px;
       grid-template-rows: 414px 130px 155px 20px;
-      gap: 10px;
+      gap: 9px;
     }
     .red {
       background-color: #E72F24;
@@ -43,6 +43,19 @@
     .black {
       background-color: #232629;
     }
+    #topwhite{
+      grid-column: span 3;
+    }
+    #middlewhiteone{
+      grid-row: span 2;
+    }
+    #middlewhitetwo{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    #middlewhitethree{
+      grid-row: span 2;
+    }
   </style>
 </head>
 
@@ -50,11 +63,11 @@
   <!-- Write your HTML here -->
    <div class="container">
     <div class="red"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
+    <div class="white" id="topwhite"></div>
+    <div class="white" id="middlewhiteone"></div>
+    <div class="white" id="middlewhitetwo"></div>
     <div class="blue"></div>
-    <div class="white"></div>
+    <div class="white" id="middlewhitethree"></div>
     <div class="white"></div>
     <div class="yellow"></div>
     <div class="black"></div>
