@@ -49,7 +49,9 @@
           <button class="btn btn-outline-success" type="submit">Check</button>
         </form>
         <!-- dark mode -->
-        <button class="btn btn-dark mx-2 darkmode" type="submit">Dark Mode</button>
+        <div class="mx-md-2 my-2">
+            <button class="btn btn-dark" id= "darkmode" type="submit">Dark Mode</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -201,16 +203,16 @@
     function toDark() {
       if (document.querySelector("html").hasAttribute("data-bs-theme")){
         document.querySelector("html").removeAttribute("data-bs-theme")
-        document.querySelector(".darkmode").innerHTML = "Dark Mode"
-        document.querySelector(".darkmode").setAttribute("class","btn btn-dark mx-2 darkmode")
+        document.querySelector("#darkmode").innerHTML = "Dark Mode"
+        document.querySelector("#darkmode").setAttribute("class","btn btn-dark darkmode")
       } else {
         document.querySelector("html").setAttribute("data-bs-theme","dark")
-        document.querySelector(".darkmode").innerHTML = "Light Mode"
-        document.querySelector(".darkmode").setAttribute("class","btn btn-light mx-2 darkmode")
+        document.querySelector("#darkmode").innerHTML = "Light Mode"
+        document.querySelector("#darkmode").setAttribute("class","btn btn-light darkmode")
       }
     }
 
-    document.querySelector('.darkmode').addEventListener("click", toDark);
+    document.querySelector('#darkmode').addEventListener("click", toDark);
   </script>
 
 </body>
