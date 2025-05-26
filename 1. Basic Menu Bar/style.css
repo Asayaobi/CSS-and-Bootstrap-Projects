@@ -1,3 +1,17 @@
 body{
-    background-color: black;
+    font-family: sans-serif;
+}
+header{
+    background-color: #14161A;
+    display: flex;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.logo img{
+    height: 50px;
+}
+.logo{
+    display: flex;
 }
