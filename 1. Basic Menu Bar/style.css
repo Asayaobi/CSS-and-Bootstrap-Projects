@@ -8,6 +8,7 @@ header{
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
+    padding: 10px;
 }
 a{
     color: white;
@@ -23,4 +24,7 @@ a{
 nav a{
     font-weight: 600;
     padding-right: 10px;
+}
+nav a:hover{
+    color: yellow;
 }
