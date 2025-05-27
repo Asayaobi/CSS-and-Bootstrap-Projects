@@ -31,29 +31,28 @@ nav a:hover{
 }
 
 .image-container{
-    margin: 100px auto;
-    width: 500px;
     display:flex;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
 }
 
 .image-container .image {
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: -15px;
 }
 
 .image-container .image img{
-    height: 70px;
-    width: 70px;
+    height: 150px;
+    width: 150px;
     transition: transform 0.3s ease-in-out;
 }
 
 .image-container .image .name{
     position: absolute;
     top: -60px;
-    left: -30px;
     display: none;
     color: white;
     background-color: black;
@@ -75,6 +74,7 @@ nav a:hover{
 
 .image-container .image:hover .name{
     display: inline-block;
+    transform: translateY(-20px);
 }
 
 .image-container .image .name::before{
@@ -98,6 +98,11 @@ nav a:hover{
 @media (max-width: 680px){
     header{
         flex-direction: column;
+    }
+    .image-container{
+        flex-direction: column;
+        align-items: center;
+        height: 180vh;
     }
     nav{
         padding: 10px 0px;
