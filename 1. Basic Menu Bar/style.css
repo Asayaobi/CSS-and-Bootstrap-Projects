@@ -47,6 +47,7 @@ nav a:hover{
 .image-container .image img{
     height: 70px;
     width: 70px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .image-container .image .name{
@@ -88,6 +89,10 @@ nav a:hover{
     border-right: 10px solid transparent;
     margin-top: 0
 
+}
+
+.image-container .image:hover img{
+    transform: translateY(-5px);
 }
 
 @media (max-width: 680px){
