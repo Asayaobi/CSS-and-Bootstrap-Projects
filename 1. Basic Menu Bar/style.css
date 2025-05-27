@@ -34,6 +34,7 @@ nav a:hover{
     margin: 100px auto;
     width: 500px;
     display:flex;
+    justify-content: center;
 }
 
 .image-container .image {
@@ -48,6 +49,16 @@ nav a:hover{
     width: 50px;
 }
 
+.image-container .image .name{
+    position: absolute;
+    top: -40px;
+    display: none;
+    color: white;
+}
+
+.image-container .image:hover .name{
+    display: flex;
+}
 @media (max-width: 680px){
     header{
         flex-direction: column;
