@@ -51,9 +51,21 @@ nav a:hover{
 
 .image-container .image .name{
     position: absolute;
-    top: -40px;
+    top: -60px;
     display: none;
     color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.image-container .image .name .text{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
 }
 
 .image-container .image:hover .name{
