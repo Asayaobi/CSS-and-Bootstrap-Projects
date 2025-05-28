@@ -77,11 +77,29 @@ body{
     position: fixed;
 }
 
-.container .sub-content{
+.container .sub-container{
     width: 400px;
     background-color: white;
     border-radius: 10px;
     padding: 10px 20px;
     box-sizing: border-box;
     box-shadow: 0px 5px 15px rgba(206, 239, 245, 0.5);
+}
+
+.container .sub-container .content{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex: auto
+}
+
+.container .sub-container .content .icon{
+    margin-right: 10px;
+}
+
+.container .sub-container .content .message .title{
+    background-color: bisque;
+    font-weight: bolder;
 }
