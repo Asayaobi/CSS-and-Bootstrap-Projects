@@ -25,6 +25,8 @@
 
 body{
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .search-bar{
@@ -62,4 +64,24 @@ body{
 
 .search-bar .action button:hover{
     color: #2979e2;
+}
+
+/* paypal card */
+.container{
+    background-color: #2979e2;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.container .sub-content{
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 15px rgba(206, 239, 245, 0.5);
 }
