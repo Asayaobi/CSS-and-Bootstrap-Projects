@@ -24,13 +24,11 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    font-family: sans-serif;
 }
 
 .search-bar{
     display: flex;
-    justify-content: space-between;
     width: 500px;
     border: 1px solid #ccc;
     border-radius: 30px;
@@ -41,4 +39,27 @@ body{
 .search-bar:focus-within{
     border: 1px solid #aaa;
     box-shadow: 0px 2px 5px rgb(39, 38, 38, 0.2);
+}
+
+.search-bar input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-bar .action{
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar .action button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.search-bar .action button:hover{
+    color: #2979e2;
 }
