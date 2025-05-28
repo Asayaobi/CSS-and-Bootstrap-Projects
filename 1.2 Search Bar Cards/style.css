@@ -78,7 +78,7 @@ body{
 }
 
 .container .sub-container{
-    width: 400px;
+    width: 600px;
     background-color: white;
     border-radius: 10px;
     padding: 10px 20px;
@@ -87,7 +87,6 @@ body{
 }
 
 .container .sub-container .content{
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -100,12 +99,10 @@ body{
 }
 
 .container .sub-container .content .message .title{
-    background-color: bisque;
     font-weight: bolder;
 }
 
 .container .sub-container .actions{
-    background-color: cadetblue;
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
@@ -133,9 +130,17 @@ body{
 .container .sub-container .actions .btn-return{
     background-color: white;
     border: 1px solid #ccc;
-    padding: 0px 30px;
 }
 
 .container .sub-container .actions .btn-return:hover{
     background-color: #ccc;
+}
+
+@media (max-width:680px){
+    .container .sub-container{
+        width: 80%;
+    }
+    .container .sub-container .actions{
+        flex-direction: column;
+    }
 }
