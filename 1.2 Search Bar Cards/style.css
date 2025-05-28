@@ -103,3 +103,39 @@ body{
     background-color: bisque;
     font-weight: bolder;
 }
+
+.container .sub-container .actions{
+    background-color: cadetblue;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.container .sub-container .actions button{
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container .sub-container .actions .btn-download{
+    background-color: #029BE1;
+    color: white;
+}
+
+.container .sub-container .actions .btn-download:hover{
+    background-color: #0280DE;
+}
+
+.container .sub-container .actions .btn-return{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0px 30px;
+}
+
+.container .sub-container .actions .btn-return:hover{
+    background-color: #ccc;
+}
