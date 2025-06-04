@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+  TODO
+1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
+2. Change only the display property to make all 3 squares line up vertically like in goal2 image. 
+-->
+
+<head>
+  <title>CSS Display Property Example</title>
+  <style>
+    h1{
+      background-color: aquamarine;
+    }
+    img {
+      float: left;
+      height: 40%;
+      width: 40%;
+      padding-right: 10px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    footer {
+      background-color: aqua;
+      margin-top: 10px;
+      clear: both;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>Header</h1>
+  <img src="../6.4 Motivation Meme Project/assets/images/moodeng.jpg">
+  <p> <span>Moo Deng</span> (born 10 July 2024) is a pygmy hippopotamus living in Khao Kheow Open Zoo in Si Racha, Chonburi, Thailand.She became a popular Internet meme at two months of age after images of her went viral online in September 2024.</p>
+  <footer> </footer>
+  <script>
+    document.querySelector('footer').innerHTML = 
+    `© Moo Deng Copyright ${new Date().getFullYear()}`
+  </script>
+</body>
+
+</html>
