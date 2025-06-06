@@ -25,7 +25,7 @@
         text-align: center;
         padding: 20px;
         flex-basis: 300px;
-        min-height: 220px;
+        height: 250px;
       }
       .plan-title, .plan-price{
         font-weight: bolder;
@@ -55,7 +55,18 @@
       }
 
       /* Hint: What can you do with a media query and flexbox? */
- 
+      @media (max-width: 850px){
+        .pricing-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        .pricing-plan{
+        width: 250px;
+        flex-basis: 250px;
+        }
+      }
     </style>
   </head>
 
