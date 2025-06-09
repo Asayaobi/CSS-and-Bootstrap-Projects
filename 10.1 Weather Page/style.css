@@ -63,21 +63,33 @@ body{
 .sign img{
     height: 100px;
 }
+.degree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .forecast{
     background-color: rgb(216, 185, 247);
     grid-column: span 2;
 }
+
 @media (max-width:768px) {
     .grid-container{
     grid-template-columns: 100%;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
-    min-height: 80vh;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    min-height: 150vh;
 }
     .summary, .wind, .degree, .forecast {
         grid-column: 1;
     }
     .wind{
         margin-top: 80px;
+    }
+    .degree{
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
     .forecast {
         grid-row: span 2;
