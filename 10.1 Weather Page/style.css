@@ -42,3 +42,16 @@ body{
     background-color: rgb(216, 185, 247);
     grid-column: span 2;
 }
+@media (max-width:768px) {
+    .grid-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 19% 19% 16% 16%;
+    min-height: 80vh;
+}
+    .summary, .wind, .degree, .forecast {
+        grid-column: 1;
+    }
+    .forecast {
+        grid-row: span 2;
+    }
+}
