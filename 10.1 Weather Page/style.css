@@ -34,7 +34,7 @@ body{
     height: 80vh;
 }
 .summary{
-    background-color: rgba(127, 255, 212, 0.196);
+    background-color: rgba(17, 134, 95, 0.273);
     grid-row: span 2;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,20 @@ body{
 .large-degree{
     font-size: 4rem;
 }
+.wind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.warning-container{
+    display: flex;
+    align-items: center;
+}
+.sign img{
+    height: 100px;
+}
 .forecast{
     background-color: rgb(216, 185, 247);
     grid-column: span 2;
@@ -56,13 +70,22 @@ body{
 @media (max-width:768px) {
     .grid-container{
     grid-template-columns: 100%;
-    grid-template-rows: 30% 19% 19% 16% 16%;
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
     min-height: 80vh;
 }
     .summary, .wind, .degree, .forecast {
         grid-column: 1;
     }
+    .wind{
+        margin-top: 80px;
+    }
     .forecast {
         grid-row: span 2;
     }
+    .xl-degree{
+    font-size: 6rem;
+}
+.large-degree{
+    font-size: 3rem;
+}
 }
