@@ -7,12 +7,11 @@
 }
 body{
     font-family: "Roboto Condensed", sans-serif;
-    background-color: rgb(94, 202, 241);
+    background-image: url('background.png');
     color:rgb(2, 55, 67);
 }
 .head{
     display: flex;
-    background-color: aquamarine;
     justify-content: center;
     align-items: center;
 }
@@ -37,6 +36,18 @@ body{
 .summary{
     background-color: rgba(127, 255, 212, 0.196);
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.xl-degree{
+    font-size: 10rem;
+}
+.large-degree{
+    font-size: 4rem;
 }
 .forecast{
     background-color: rgb(216, 185, 247);
