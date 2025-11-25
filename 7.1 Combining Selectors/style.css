@@ -1,1 +1,26 @@
 /* Write your code here: */
+
+/* Selector1, selector2 { xx: xxxx}  */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* Parent-selector > child-selector */
+.box > p {
+    color: firebrick;
+}
+
+/* Ancestor-selector descendent(in any level deep) */
+.box li {
+    color: blue;
+}
+
+/* Selectorselector {}  eg. h1#title.big.heading {}for <h1 id=“title”class=“big heading”>*/
+li.done {
+    color: seagreen;
+}
+
+/* Ancestor-selector selectorselector */
+ul p.done {
+    font-size: 0.5rem;
+}
