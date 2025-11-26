@@ -38,3 +38,9 @@ footer {
   float: right;
 }
 
+/* image */
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
