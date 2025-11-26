@@ -26,3 +26,15 @@ footer {
 .text-position{
   display: block;
 }
+
+/* cards */
+.card {
+  width: 45%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
