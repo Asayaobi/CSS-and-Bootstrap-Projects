@@ -19,3 +19,10 @@ footer {
   color: midnightblue;
 }
 
+/* h1 text */
+.text-color {
+  color: #191970;
+}
+.text-position{
+  display: block;
+}
