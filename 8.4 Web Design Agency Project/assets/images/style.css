@@ -39,8 +39,34 @@ footer {
 }
 
 /* image */
-.tile-image{
+.tile-image {
   height: 200px;
   float: left;
   margin-right: 50px;
+}
+
+/* Mobile Devices */
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .tile-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    display: block;
+    margin-top: 16px;
+    text-align: justify;
+  }
+  .left, .right {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
